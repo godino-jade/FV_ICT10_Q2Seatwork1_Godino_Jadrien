@@ -14,20 +14,20 @@
             background-image: url('https://media.istockphoto.com/id/2164367108/video/volleyball-ball-on-empty-volleyball-court-of-arena-3d-animation.jpg?s=640x640&k=20&c=9cPXVIDMWEwq_NMV2PPAAkv-qcdZ6RZqIsJifKESMxI=');
             background-repeat: no-repeat;
             background-size: cover;
-            display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
         }
         
-        .container{ 
+        #clubform{ 
+            color: #F9C050;
             border-radius: 10px;
-            background-color: #00BB77;
+            background-color: #005F73;
             padding: 20px;
             margin: auto;
             margin-top: 9%;
-            margin-bottom: 9%;
-            width: 800px;
+            margin-bottom: 3%;
+            width: 70%;
             box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.52);
         }
 
@@ -38,7 +38,7 @@
             cursor: pointer;
             font-weight: bold;
             margin-left: 300px;
-            }
+        }
 
         h1, label{
             font-weight: bold;
@@ -52,39 +52,52 @@
         .btn{
             display: block;
             width: 100%;
-            border: solid #7ba999;
+            border-radius: 5px;
+            background-color: #47c2af;
+            color: #474929;
+            font-weight: bold;
+            height: 50px;
+        }
+
+        #output1{
+            color: #F9C050;
             border-radius: 10px;
-            background-color: rgb(15, 72, 13);
+            background-color: #005F73;
+            padding: 20px;
+            margin: auto;
+            margin-bottom: 9%;
+            width: 70%;
+            box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.52);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>OBMC VOLLEYBALL VARSITY CHECKER</h1>
-        <h5>CANDIDATE VERIFICATION SYSTEM</h5>
-        <br>
-            <form action=" ">
+    <div class="container col">
+        <div class="row" id="clubform">
+            <h1>OBMC VOLLEYBALL VARSITY CHECKER‼️🏐</h1>
+            <h5>CANDIDATE VERIFICATION SYSTEM</h5>
+            <br><br>
+                <form action=" ">
 
-            <label for="firstname">First Name:</label>    
-            <input type="text" id="firstname" class="form-control" placeholder="enter first name...." required>
+                <label for="firstname">First Name:</label>    
+                <input type="text" id="firstname" class="form-control" placeholder="enter first name...." required>
 
-            <br>
+                <br>
 
-            <label for="lastname">Last Name:</label>    
-            <input type="text" id="lastname" class="form-control" placeholder="enter last name...." required>
+                <label for="lastname">Last Name:</label>    
+                <input type="text" id="lastname" class="form-control" placeholder="enter last name...." required>
 
-            <br>
+                <br>
 
-            <button type="button" class="btn" py-click="checkmem">Check</button>
-            
-        </form>
+                <button type="button" class="btn" py-click="checkmem">CHECK</button>
+                
+            </form>
+        </div>
 
-            <br>
-
-        <h3>Results:</h3>
-        <div id="output1"></div>
-
-        <script type="py" src="main.py"></script>
+        <div class="row">
+            <b><div id="output1"><h5>Are you excited to see the results?</h5></div></b>
+        </div>
     </div>
+        <script type="py" src="main.py"></script>
 </body>
 </html>
