@@ -11,7 +11,9 @@
 
     <style>
         body{
-            background-color: rgb(137, 137, 137);
+            background-image: url('https://media.istockphoto.com/id/2164367108/video/volleyball-ball-on-empty-volleyball-court-of-arena-3d-animation.jpg?s=640x640&k=20&c=9cPXVIDMWEwq_NMV2PPAAkv-qcdZ6RZqIsJifKESMxI=');
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,7 +22,7 @@
         
         .container{ 
             border-radius: 10px;
-            background-color: rgb(129, 206, 129);
+            background-color: #00BB77;
             padding: 20px;
             margin: auto;
             margin-top: 9%;
@@ -38,13 +40,21 @@
             margin-left: 300px;
             }
 
-        h1{
+        h1, label{
             font-weight: bold;
         }
         
         h5{
             justify-content: center; 
             align-items: center; 
+        }
+
+        .btn{
+            display: block;
+            width: 100%;
+            border: solid #7ba999;
+            border-radius: 10px;
+            background-color: rgb(15, 72, 13);
         }
     </style>
 </head>
@@ -53,16 +63,19 @@
         <h1>OBMC VOLLEYBALL VARSITY CHECKER</h1>
         <h5>CANDIDATE VERIFICATION SYSTEM</h5>
         <br>
-            <form action=" ">     
+            <form action=" ">
+
+            <label for="firstname">First Name:</label>    
             <input type="text" id="firstname" class="form-control" placeholder="enter first name...." required>
 
             <br>
-            
+
+            <label for="lastname">Last Name:</label>    
             <input type="text" id="lastname" class="form-control" placeholder="enter last name...." required>
 
             <br>
 
-            <button type="button" class="btn btn-info" py-click="checkmem">Check</button>
+            <button type="button" class="btn" py-click="checkmem">Check</button>
             
         </form>
 
