@@ -1,8 +1,9 @@
 from pyscript import document
 
 def checkmem(e):
+    document.getElementById("output1").innerHTML = (f'Click the button to get the results.') # clears previous result
 
-    club_members = ["Johanna Ramos", "Julienne Miranda", "Kailey Gayas", "Hope Benitez", "Cheree Mendoza"]
+    club_members = ["Johanna Ramos", "Julienne Miranda", "Kailey Gayas", "Hope Benitez", "Aaliyah Pangilinan"]
 
     first_name = document.getElementById("firstname").value
     last_name = document.getElementById("lastname").value
@@ -14,6 +15,6 @@ def checkmem(e):
 
     confirm_mem = full_name in club_members
 
-    message = (f'Sorry {new_first_name} {new_last_name}, you did not pass varsity.' , f'Congrats! {new_first_name} {new_last_name}, you passed!')
+    message = (f'Sorry {new_first_name} {new_last_name}, your name is not on the list. Try again next year!' , f'Congrats! {new_first_name} {new_last_name}, you passed! You are now part of the Volleyball Varsity of OBMC.')
 
     document.getElementById("output1").innerHTML = message[confirm_mem]
