@@ -1,7 +1,7 @@
 from pyscript import document
 
 def checkmem(e):
-    document.getElementById("output1").innerHTML = (f'Click the button to get the results.') # clears previous result
+    document.getElementById("output1").innerHTML = "" # clears previous result
 
     club_members = ["Johanna Ramos", "Julienne Miranda", "Kailey Gayas", "Hope Benitez", "Aaliyah Pangilinan"]
 
